@@ -1,0 +1,126 @@
+.skills {
+  font-family: "Oleo Script", cursive;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.skills_title h1 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #474747;
+  font-size: 3rem;
+}
+
+.skills_title span {
+  color: black;
+}
+
+#dark .skills_title span{
+    color: rgb(221, 217, 217);
+}
+
+.toggle_bar {
+  padding-top: 60px;
+  font-family: "Oleo Script Swash Caps", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle_bar .toggle_container {
+  width: 300px;
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.toggle_item {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+#active {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+.skill-card {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  column-gap: 40px;
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 100%;
+  height: 250px;
+  -webkit-box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  -moz-box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  cursor: pointer;
+  text-align: start;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.card img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    /* margin-left: 10px; */
+}
+.card h2{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.card p{
+    font-size: 1rem;
+    color: rgb(113, 113, 113);
+}
+
+.skill_icon{
+    width: 100%;
+    /* height: 100%; */
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: white; */
+}
+
+.card:hover{
+    transform: scale(1.07);
+}
+
+@media (max-width : 600px){
+    .skill-card{
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    .skill-card:first-child{
+        background-color: white;
+    }
+    .skills_title h1 {
+      font-family: "Oleo Script Swash Caps", cursive;
+      color: #474747;
+      font-size: 2rem;
+    }
+    
+}
+
+
+@media (min-width : 600px) and (max-width : 1000px){
+    .skill-card{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        font-size: 1rem;
+    }
+}

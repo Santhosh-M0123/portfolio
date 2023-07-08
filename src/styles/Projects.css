@@ -1,0 +1,249 @@
+.projects{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+    font-family: "Oleo Script", cursive;
+}
+
+.project_container{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.projects_title h1{
+    color: #474747;
+    font-size: 3rem;
+    font-family: "Oleo Script Swash Caps", cursive;
+}
+
+.projects_title span{
+    color: rgb(221, 217, 217);
+}
+
+#light .projects_title span{
+    color: black;
+}
+
+.project_title{
+    margin-top: 10px;
+}
+
+.projects_card_container{
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    column-gap: 3rem;
+    row-gap: 2rem;
+    font-family: "Oleo Script", cursive;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.projects_card_container .project_card .img{
+    display: flex;
+    justify-content: center;
+}
+
+.project_card{
+    text-align: center;
+    padding: 30px;
+}
+.projects_card_container .project_card .img img{
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.project_card .project_des p{
+    font-size: 15px;
+    color: rgb(195, 193, 193);
+}
+
+.project_card{
+    background-color: white;
+    /* border: 1px solid black; */
+    -webkit-box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  -moz-box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  cursor: pointer;
+}
+
+#dark .project_card{
+    background-color: black;
+    /* border: 1px solid black; */
+    -webkit-box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  -moz-box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  box-shadow: 1px 5px 26px 0px rgba(161, 158, 161, 1);
+  cursor: pointer;
+  color: white;
+}
+
+#light .project_des p{
+    color: rgb(53, 53, 53);
+}
+.projects_card_container .project_card .tech_img img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.tech_img{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.source_code img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.source_code{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.source_btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #3F59DE;
+    padding: 15px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+}
+
+.source_btn:hover{
+    transform: scale(1.05);
+}
+@media (max-width : 600px) {
+    .projects_card_container{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1,300px);
+        column-gap: 3rem;
+        row-gap: 1.5rem;
+        font-family: "Oleo Script", cursive;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
+    .projects_title h1{
+        color: #474747;
+        font-size: 2rem;
+        font-family: "Oleo Script Swash Caps", cursive;
+    }
+
+    .projects_card_container .project_card .tech_img img{
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+    .project_title h2{
+        font-size: 1.3rem;
+    }
+    .project_card .project_des p{
+        font-size: 13px;
+        color: rgb(195, 193, 193);
+    }
+
+    .source_btn{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 140px;
+        height: 45px;
+        background-color: #3F59DE;
+        padding: 15px 15px;
+        border-radius: 30px;
+        cursor: pointer;
+        color: white;
+    }
+    .source_code img{
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+    .projects_card_container .project_card .img img{
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+    }
+    .projects{
+        width: 100%;
+        height: 100%;
+        padding-top: 10vh;
+        font-family: "Oleo Script", cursive;
+    }
+    
+}
+
+@media (min-width : 600px) and (max-width : 1000px){
+    .projects_card_container{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,300px);
+        column-gap: 3rem;
+        row-gap: 1.5rem;
+        font-family: "Oleo Script", cursive;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
+    .projects_card_container .project_card .tech_img img{
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+    .project_title h2{
+        font-size: 1.3rem;
+    }
+    .project_card .project_des p{
+        font-size: 13px;
+        color: rgb(195, 193, 193);
+    }
+
+    .source_btn{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 140px;
+        height: 45px;
+        background-color: #3F59DE;
+        padding: 15px 15px;
+        border-radius: 30px;
+        cursor: pointer;
+        color: white;
+    }
+    .source_code img{
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+    .projects_card_container .project_card .img img{
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+    }
+    .projects{
+        width: 100%;
+        height: 100%;
+        padding-top: 10vh;
+        font-family: "Oleo Script", cursive;
+    }
+    
+}
