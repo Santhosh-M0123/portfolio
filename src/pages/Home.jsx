@@ -45,7 +45,7 @@ const Home = () => {
           {/* social icons  */}
           <div className="social_icons">
             <div className="icons_container">
-              <img src="images/git.svg" alt="github" onClick={() => {SocialNav("https://github.com/Santhosh-M0123/")}}/>
+              {/* <img src="images/git.svg" alt="github" onClick={() => {SocialNav("https://github.com/Santhosh-M0123/")}}/> */}
             </div>
             <div className="icons_container" onClick={() => {SocialNav("https://www.linkedin.com/in/santhosh-m-")}}>
               <img src="images/linkedin.svg" alt="linkedin" />
